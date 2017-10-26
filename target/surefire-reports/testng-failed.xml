@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.coveros.appium_testing.YoutubeTest]">
+  <test name="Command line test(failed)" preserve-order="false">
+    <classes>
+      <class name="com.coveros.appium_testing.YoutubeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="youtubeSearch"/>
+          <include name="setup"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
