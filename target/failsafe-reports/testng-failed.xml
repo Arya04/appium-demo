@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" verbose="0" name="Failed suite [Sample Suite]" parallel="methods">
+  <test name="Sample Test(failed)" parallel="methods" preserve-order="false">
+    <classes>
+      <class name="com.coveros.appium_testing.YoutubeTests">
+        <methods>
+          <include name="checkCloseButton"/>
+          <include name="youtubeSearch"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

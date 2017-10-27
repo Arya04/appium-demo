@@ -18,7 +18,8 @@ import org.testng.annotations.Test;
 
 public class YoutubeTests {
 	private static AndroidDriver<WebElement> driver;
-	
+	private static final String APP_PACKAGE_NAME = "com.google.android.youtube:";
+
 	@BeforeClass
 	public void setup() throws MalformedURLException, InterruptedException {
 
@@ -40,15 +41,31 @@ public class YoutubeTests {
 	}
 	
 	@Test
-	public void youtubeSearch() {
-		
-		String app_package_name = "com.google.android.youtube:";
+	public void youtubeSearch() throws Exception{
+		String expected = "travis scott";
+
 		driver.findElementByAccessibilityId("Search").click();
-		driver.findElementById(app_package_name+ "id/search_edit_text").sendKeys("travis scott");
-		//driver.findElementById(app_package_name+ "id/search_edit_text").sendKeys(Keys.ENTER);
+		driver.findElementById(APP_PACKAGE_NAME+ "id/search_edit_text").sendKeys(expected);
+		driver.findElementById(APP_PACKAGE_NAME+ "id/search_edit_text").sendKeys(Keys.ENTER);
 		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.TextView").click();
 		
-		Assert.assertTrue(true);
+		WebElement search = driver.findElementById(APP_PACKAGE_NAME+"id/search_query");
+	    
+		
+		String actual = search.getText().toString();
+		Assert.assertEquals(actual, expected);
 	}
-
+	
+	@Test
+	public void checkCloseButton() throws Exception{
+		driver.findElementByAccessibilityId("Account").click();
+		driver.findElementByAccessibilityId("Close").click();
+		
+		
+		WebElement details = driver.findElementById(APP_PACKAGE_NAME +"id/details");
+		
+		Assert.assertNotNull(details);
+	}
+	
+    
 }

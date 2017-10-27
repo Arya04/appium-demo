@@ -1,4 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="CoverosSpare" name="com.coveros.appium_testing.YoutubeTests" tests="1" failures="0" timestamp="26 Oct 2017 20:47:00 GMT" time="36.467" errors="0">
-  <testcase name="youtubeSearch" time="8.436" classname="com.coveros.appium_testing.YoutubeTests"/>
+<testsuite hostname="CoverosSpare" name="com.coveros.appium_testing.YoutubeTests" tests="2" failures="2" timestamp="27 Oct 2017 18:29:30 GMT" time="59.17" errors="0">
+  <testcase name="youtubeSearch" time="19.527" classname="com.coveros.appium_testing.YoutubeTests">
+    <failure type="org.openqa.selenium.NoSuchElementException" message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.46.0&amp;apos;, revision: &amp;apos;61506a4624b13675f24581e453592342b7485d71&amp;apos;, time: &amp;apos;2015-06-04 10:22:50&amp;apos;
+System info: host: &amp;apos;CoverosSpare&amp;apos;, ip: &amp;apos;192.168.1.174&amp;apos;, os.name: &amp;apos;Windows 8.1&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.3&amp;apos;, java.version: &amp;apos;1.8.0_144&amp;apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.google.android.youtube, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, desired={appPackage=com.google.android.youtube, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, browserName=, platformName=Android, deviceName=emulator}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, deviceModel=Samsung Galaxy S8  API 24, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: 249674f3-7340-4b65-862d-8488bc0d4af2">
+      <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'CoverosSpare', ip: '192.168.1.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.google.android.youtube, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, desired={appPackage=com.google.android.youtube, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, browserName=, platformName=Android, deviceName=emulator}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, deviceModel=Samsung Galaxy S8  API 24, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: 249674f3-7340-4b65-862d-8488bc0d4af2
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:269)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:27)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:80)
+	at com.coveros.appium_testing.YoutubeTests.youtubeSearch(YoutubeTests.java:47)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="checkCloseButton" time="30.653" classname="com.coveros.appium_testing.YoutubeTests">
+    <failure type="org.openqa.selenium.NoSuchElementException" message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26.59 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.46.0&amp;apos;, revision: &amp;apos;61506a4624b13675f24581e453592342b7485d71&amp;apos;, time: &amp;apos;2015-06-04 10:22:50&amp;apos;
+System info: host: &amp;apos;CoverosSpare&amp;apos;, ip: &amp;apos;192.168.1.174&amp;apos;, os.name: &amp;apos;Windows 8.1&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.3&amp;apos;, java.version: &amp;apos;1.8.0_144&amp;apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.google.android.youtube, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, desired={appPackage=com.google.android.youtube, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, browserName=, platformName=Android, deviceName=emulator}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, deviceModel=Samsung Galaxy S8  API 24, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: 249674f3-7340-4b65-862d-8488bc0d4af2
+*** Element info: {Using=accessibility id, value=Close}">
+      <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26.59 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'CoverosSpare', ip: '192.168.1.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.google.android.youtube, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, desired={appPackage=com.google.android.youtube, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, browserName=, platformName=Android, deviceName=emulator}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, deviceModel=Samsung Galaxy S8  API 24, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: 249674f3-7340-4b65-862d-8488bc0d4af2
+*** Element info: {Using=accessibility id, value=Close}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:108)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)
+	at com.coveros.appium_testing.YoutubeTests.checkCloseButton(YoutubeTests.java:62)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames]]>
+    </failure>
+  </testcase>
 </testsuite>
