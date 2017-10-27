@@ -13,26 +13,32 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class YoutubeTests {
 	private static AndroidDriver<WebElement> driver;
 	private static final String APP_PACKAGE_NAME = "com.google.android.youtube:";
 
-	@BeforeClass
+	@BeforeTest
 	public void setup() throws MalformedURLException, InterruptedException {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
 		capabilities.setCapability("deviceName", "emulator");
 		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("unicodeKeyboard", "true");                                     
+		capabilities.setCapability("resetKeyboard", "true");
 		capabilities.setCapability("appPackage", "com.google.android.youtube");
 		capabilities.setCapability("appActivity", "com.google.android.apps.youtube.app.WatchWhileActivity");
 
 		driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-		//driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
-
+		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		Thread.sleep(10000);
 	}
 
 	@AfterClass
@@ -46,7 +52,7 @@ public class YoutubeTests {
 
 		driver.findElementByAccessibilityId("Search").click();
 		driver.findElementById(APP_PACKAGE_NAME+ "id/search_edit_text").sendKeys(expected);
-		driver.findElementById(APP_PACKAGE_NAME+ "id/search_edit_text").sendKeys(Keys.ENTER);
+		//driver.findElementById(APP_PACKAGE_NAME+ "id/search_edit_text").sendKeys(Keys.ENTER);
 		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.TextView").click();
 		
 		WebElement search = driver.findElementById(APP_PACKAGE_NAME+"id/search_query");
