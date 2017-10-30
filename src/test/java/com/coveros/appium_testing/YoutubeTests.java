@@ -76,8 +76,8 @@ public class YoutubeTests {
 		WebElement account = driver.findElementByAccessibilityId("Account");
 		account.click();
 		Thread.sleep(3000);
-		//WebElement close = driver.findElementByAccessibilityId("Close");
-		//close.click();
+		WebElement close = driver.findElementByAccessibilityId("Close");
+		close.click();
 		captureScreenShots("close");
 		
 		Assert.assertNotNull(account);
@@ -87,6 +87,8 @@ public class YoutubeTests {
 	public void videoTest() throws Exception {
 		WebElement video = driver.findElementByAccessibilityId("Video");
 		video.click();
+		WebElement nav = driver.findElementByAccessibilityId("Navigate up");
+		nav.click();
 		captureScreenShots("video test");
 		
 		Assert.assertNotNull(video);

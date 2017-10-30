@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample Suite" duration-ms="103742" started-at="2017-10-30T14:53:14Z" finished-at="2017-10-30T14:54:58Z">
+  <suite name="Sample Suite" duration-ms="107917" started-at="2017-10-30T15:04:27Z" finished-at="2017-10-30T15:06:15Z">
     <groups>
     </groups>
-    <test name="Sample Test" duration-ms="103742" started-at="2017-10-30T14:53:14Z" finished-at="2017-10-30T14:54:58Z">
+    <test name="Sample Test" duration-ms="107917" started-at="2017-10-30T15:04:27Z" finished-at="2017-10-30T15:06:15Z">
       <class name="com.coveros.appium_testing.YoutubeTests">
-        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="25429" started-at="2017-10-30T14:53:14Z" finished-at="2017-10-30T14:53:40Z">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="25551" started-at="2017-10-30T15:04:27Z" finished-at="2017-10-30T15:04:52Z">
         </test-method>
-        <test-method status="PASS" signature="checkAccountButton()" name="checkAccountButton" duration-ms="9498" started-at="2017-10-30T14:53:40Z" finished-at="2017-10-30T14:53:49Z">
+        <test-method status="PASS" signature="checkAccountButton()" name="checkAccountButton" duration-ms="11850" started-at="2017-10-30T15:04:52Z" finished-at="2017-10-30T15:05:04Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3251" started-at="2017-10-30T14:53:49Z" finished-at="2017-10-30T14:53:52Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3648" started-at="2017-10-30T15:05:04Z" finished-at="2017-10-30T15:05:08Z">
         </test-method>
-        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="20748" started-at="2017-10-30T14:53:52Z" finished-at="2017-10-30T14:54:13Z">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="20776" started-at="2017-10-30T15:05:08Z" finished-at="2017-10-30T15:05:29Z">
         </test-method>
-        <test-method status="PASS" signature="videoTest()" name="videoTest" duration-ms="5453" started-at="2017-10-30T14:54:13Z" finished-at="2017-10-30T14:54:19Z">
+        <test-method status="PASS" signature="videoTest()" name="videoTest" duration-ms="6508" started-at="2017-10-30T15:05:29Z" finished-at="2017-10-30T15:05:35Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3265" started-at="2017-10-30T14:54:19Z" finished-at="2017-10-30T14:54:22Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3313" started-at="2017-10-30T15:05:35Z" finished-at="2017-10-30T15:05:38Z">
         </test-method>
-        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="20587" started-at="2017-10-30T14:54:22Z" finished-at="2017-10-30T14:54:42Z">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="20684" started-at="2017-10-30T15:05:38Z" finished-at="2017-10-30T15:05:59Z">
         </test-method>
-        <test-method status="PASS" signature="youtubeSearch()" name="youtubeSearch" duration-ms="12181" started-at="2017-10-30T14:54:42Z" finished-at="2017-10-30T14:54:55Z">
+        <test-method status="PASS" signature="youtubeSearch()" name="youtubeSearch" duration-ms="12253" started-at="2017-10-30T15:05:59Z" finished-at="2017-10-30T15:06:11Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3317" started-at="2017-10-30T14:54:55Z" finished-at="2017-10-30T14:54:58Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3322" started-at="2017-10-30T15:06:11Z" finished-at="2017-10-30T15:06:15Z">
         </test-method>
       </class>
     </test>

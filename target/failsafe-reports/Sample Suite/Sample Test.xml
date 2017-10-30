@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="CoverosSpare" name="com.coveros.appium_testing.YoutubeTests" tests="3" failures="0" timestamp="30 Oct 2017 18:54:58 GMT" time="103.742" errors="0">
-  <testcase name="checkAccountButton" time="9.498" classname="com.coveros.appium_testing.YoutubeTests"/>
-  <testcase name="videoTest" time="5.453" classname="com.coveros.appium_testing.YoutubeTests"/>
-  <testcase name="youtubeSearch" time="12.181" classname="com.coveros.appium_testing.YoutubeTests"/>
+<testsuite hostname="CoverosSpare" name="com.coveros.appium_testing.YoutubeTests" tests="3" failures="0" timestamp="30 Oct 2017 19:06:15 GMT" time="107.917" errors="0">
+  <testcase name="checkAccountButton" time="11.85" classname="com.coveros.appium_testing.YoutubeTests"/>
+  <testcase name="videoTest" time="6.508" classname="com.coveros.appium_testing.YoutubeTests"/>
+  <testcase name="youtubeSearch" time="12.253" classname="com.coveros.appium_testing.YoutubeTests"/>
 </testsuite>
