@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="1" name="TestSuite" time="46.065" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="TestSuite" time="45.786" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -20,7 +20,7 @@
     <property name="basedir" value="C:\Users\Coveros\eclipse-workspace\appium_testing"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefirebooter4286081582150450368.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefirebooter4233534037156985456.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\Coveros\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
-    <property name="sun.java.command" value="C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefirebooter4286081582150450368.jar C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefire4075653629380338883tmp C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefire9185281341303750849tmp"/>
+    <property name="sun.java.command" value="C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefirebooter4233534037156985456.jar C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefire5810527940722006193tmp C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefire8509075025864722203tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,40 +61,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.coveros.appium_testing.YoutubeTests" name="checkCloseButton" time="7.691"/>
-  <testcase classname="com.coveros.appium_testing.YoutubeTests" name="youtubeSearch" time="8.405">
-    <failure message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 8.34 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
-System info: host: &apos;CoverosSpare&apos;, ip: &apos;192.168.1.174&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.google.android.youtube, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, desired={appPackage=com.google.android.youtube, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, browserName=, platformName=Android, deviceName=emulator}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, deviceModel=Samsung Galaxy S8  API 24, platformName=Android, deviceManufacturer=Genymotion}]
-Session ID: b52e01af-949b-4b7a-adf5-8c4ee5a5e46c
-*** Element info: {Using=accessibility id, value=Search}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 8.34 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
-System info: host: &apos;CoverosSpare&apos;, ip: &apos;192.168.1.174&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.google.android.youtube, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, desired={appPackage=com.google.android.youtube, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, browserName=, platformName=Android, deviceName=emulator}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, deviceModel=Samsung Galaxy S8  API 24, platformName=Android, deviceManufacturer=Genymotion}]
-Session ID: b52e01af-949b-4b7a-adf5-8c4ee5a5e46c
-*** Element info: {Using=accessibility id, value=Search}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:108)
-	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)
-	at com.coveros.appium_testing.YoutubeTests.youtubeSearch(YoutubeTests.java:60)
-</failure>
-  </testcase>
+  <testcase classname="com.coveros.appium_testing.YoutubeTests" name="checkCloseButton" time="8.603"/>
+  <testcase classname="com.coveros.appium_testing.YoutubeTests" name="youtubeSearch" time="11.87"/>
 </testsuite>

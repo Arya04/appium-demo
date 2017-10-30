@@ -1,72 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample Suite" duration-ms="45790" started-at="2017-10-30T10:53:35Z" finished-at="2017-10-30T10:54:21Z">
+  <suite name="Sample Suite" duration-ms="45489" started-at="2017-10-30T12:48:57Z" finished-at="2017-10-30T12:49:43Z">
     <groups>
     </groups>
-    <test name="Sample Test" duration-ms="45790" started-at="2017-10-30T10:53:35Z" finished-at="2017-10-30T10:54:21Z">
+    <test name="Sample Test" duration-ms="45489" started-at="2017-10-30T12:48:57Z" finished-at="2017-10-30T12:49:43Z">
       <class name="com.coveros.appium_testing.YoutubeTests">
-        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="26218" started-at="2017-10-30T10:53:35Z" finished-at="2017-10-30T10:54:01Z">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="21682" started-at="2017-10-30T12:48:57Z" finished-at="2017-10-30T12:49:19Z">
         </test-method>
-        <test-method status="PASS" signature="checkCloseButton()" name="checkCloseButton" duration-ms="7692" started-at="2017-10-30T10:54:01Z" finished-at="2017-10-30T10:54:09Z">
+        <test-method status="PASS" signature="checkCloseButton()" name="checkCloseButton" duration-ms="8604" started-at="2017-10-30T12:49:19Z" finished-at="2017-10-30T12:49:27Z">
         </test-method>
-        <test-method status="FAIL" signature="youtubeSearch()" name="youtubeSearch" duration-ms="8396" started-at="2017-10-30T10:54:09Z" finished-at="2017-10-30T10:54:17Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 8.34 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'CoverosSpare', ip: '192.168.1.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_144'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.google.android.youtube, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, desired={appPackage=com.google.android.youtube, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, browserName=, platformName=Android, deviceName=emulator}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, deviceModel=Samsung Galaxy S8  API 24, platformName=Android, deviceManufacturer=Genymotion}]
-Session ID: b52e01af-949b-4b7a-adf5-8c4ee5a5e46c
-*** Element info: {Using=accessibility id, value=Search}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 8.34 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'CoverosSpare', ip: '192.168.1.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_144'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.google.android.youtube, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, desired={appPackage=com.google.android.youtube, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, browserName=, platformName=Android, deviceName=emulator}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, deviceModel=Samsung Galaxy S8  API 24, platformName=Android, deviceManufacturer=Genymotion}]
-Session ID: b52e01af-949b-4b7a-adf5-8c4ee5a5e46c
-*** Element info: {Using=accessibility id, value=Search}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:108)
-	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)
-	at com.coveros.appium_testing.YoutubeTests.youtubeSearch(YoutubeTests.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception>
+        <test-method status="PASS" signature="youtubeSearch()" name="youtubeSearch" duration-ms="11870" started-at="2017-10-30T12:49:27Z" finished-at="2017-10-30T12:49:39Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3460" started-at="2017-10-30T10:54:17Z" finished-at="2017-10-30T10:54:21Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3319" started-at="2017-10-30T12:49:39Z" finished-at="2017-10-30T12:49:43Z">
         </test-method>
       </class>
     </test>
