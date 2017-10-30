@@ -5,7 +5,7 @@
     <classes>
       <class name="com.coveros.appium_testing.YoutubeTests">
         <methods>
-          <include name="anotherTest"/>
+          <include name="checkAccountButton"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>

@@ -1,6 +1,9 @@
 package com.coveros.appium_testing;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -18,6 +21,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -28,5 +32,40 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class YoutubePage {
+	
+	public YoutubePage(AndroidDriver<WebElement> driver) {
+		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+		
+	}
+	
+	@AndroidFindBy(id = "Search")
+	public WebElement search;
+	
+	@AndroidFindBy(id = "search_edit_text")
+	public WebElement searchQuery;
+	
+	@AndroidFindBy(id = "Account")
+	public WebElement account;
+	
+	@AndroidFindBy(id = "Video")
+	public WebElement video;
+	
+	@AndroidFindBy(id = "Navigate up")
+	public WebElement nav;
+	
 
+	public void search(String params) throws Exception{
+		search.click();
+		searchQuery.sendKeys(params);
+	}
+	public void goToAccount() {
+		account.click();
+		Assert.assertNotNull(account);
+
+	}
+	public void goToVideo() {
+		video.click();
+		nav.click();
+		Assert.assertNotNull(nav);
+	}
 }

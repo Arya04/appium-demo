@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="TestSuite" time="108.22" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="TestSuite" time="189.178" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -20,7 +20,7 @@
     <property name="basedir" value="C:\Users\Coveros\eclipse-workspace\appium_testing"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefirebooter7103585266247605264.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefirebooter7361900921311263732.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\Coveros\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
-    <property name="sun.java.command" value="C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefirebooter7103585266247605264.jar C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefire663616541951499630tmp C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefire3831193896818741299tmp"/>
+    <property name="sun.java.command" value="C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefirebooter7361900921311263732.jar C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefire3271563452258116581tmp C:\Users\Coveros\eclipse-workspace\appium_testing\target\surefire\surefire8966556994640591295tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,7 +61,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.coveros.appium_testing.YoutubeTests" name="checkAccountButton" time="11.85"/>
-  <testcase classname="com.coveros.appium_testing.YoutubeTests" name="videoTest" time="6.508"/>
-  <testcase classname="com.coveros.appium_testing.YoutubeTests" name="youtubeSearch" time="12.253"/>
+  <testcase classname="com.coveros.appium_testing.YoutubePageTests" name="goToAccount" time="3.46"/>
+  <testcase classname="com.coveros.appium_testing.YoutubePageTests" name="goToVideo" time="7.943"/>
+  <testcase classname="com.coveros.appium_testing.YoutubePageTests" name="searchMethod" time="7.201"/>
+  <testcase classname="com.coveros.appium_testing.YoutubeTests" name="checkAccountButton" time="7.841"/>
+  <testcase classname="com.coveros.appium_testing.YoutubeTests" name="videoTest" time="10.291"/>
+  <testcase classname="com.coveros.appium_testing.YoutubeTests" name="youtubeSearch" time="11.313"/>
 </testsuite>

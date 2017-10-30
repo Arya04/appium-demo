@@ -75,10 +75,14 @@ public class YoutubeTests {
 	public void checkAccountButton() throws Exception {
 		WebElement account = driver.findElementByAccessibilityId("Account");
 		account.click();
-		Thread.sleep(3000);
-		WebElement close = driver.findElementByAccessibilityId("Close");
-		close.click();
-		captureScreenShots("close");
+		//WebDriverWait wait = new WebDriverWait(driver,20);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[7]/android.widget.RelativeLayout/android.widget.TextView")));      
+		
+		//Thread.sleep(3000);
+		
+		//WebElement close = driver.findElementByAccessibilityId("Close");
+		//close.click();
+		captureScreenShots("account");
 		
 		Assert.assertNotNull(account);
 	}
