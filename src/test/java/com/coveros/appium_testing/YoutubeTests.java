@@ -30,12 +30,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class YoutubeTests {
-	private AndroidDriver<WebElement> driver;
+	private static AndroidDriver<WebElement> driver;
 	private static final String APP_PACKAGE_NAME = "com.google.android.youtube:";
 	String folder_name;
 	DateFormat df;
 
-	@BeforeTest(alwaysRun = true)
+	@BeforeMethod
 	public void setup() throws MalformedURLException {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -44,15 +44,13 @@ public class YoutubeTests {
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("appPackage", "com.google.android.youtube");
 		capabilities.setCapability("appActivity", "com.google.android.apps.youtube.app.WatchWhileActivity");
-
+		
 		driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		//WebDriverWait wait = new WebDriverWait(driver,80);
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.google.android.youtube:id/youtube_logo")));
-
+		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+	
 	}
 
-	@AfterTest(alwaysRun = true)
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
@@ -60,14 +58,10 @@ public class YoutubeTests {
 	@Test
 	public void youtubeSearch() throws Exception {
 		String expected = "travis scott";
-		
-		
-		//System.out.println(driver.getPageSource());
-		
+				
 		driver.findElementByAccessibilityId("Search").click();
 		driver.findElementById(APP_PACKAGE_NAME + "id/search_edit_text").sendKeys(expected);
-		// driver.findElementById(APP_PACKAGE_NAME+
-		// "id/search_edit_text").sendKeys(Keys.ENTER);
+		
 		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.widget.FrameLayout[2]/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.TextView").click();
 
 		WebElement search = driver.findElementById(APP_PACKAGE_NAME + "id/search_query");
@@ -78,23 +72,32 @@ public class YoutubeTests {
 	}
 
 	@Test
-	public void checkCloseButton() throws Exception {
-
-		//captureScreenShots("closebutton");
-		//System.out.println(driver.getPageSource());
-		driver.findElementByAccessibilityId("Account").click();
-		//driver.findElementByAccessibilityId("Close").click();
+	public void checkAccountButton() throws Exception {
+		WebElement account = driver.findElementByAccessibilityId("Account");
+		account.click();
+		Thread.sleep(3000);
+		//WebElement close = driver.findElementByAccessibilityId("Close");
+		//close.click();
 		captureScreenShots("close");
-
-		//WebElement details = driver.findElementById(APP_PACKAGE_NAME + "id/details");
-
-		//Assert.assertNotNull();
+		
+		Assert.assertNotNull(account);
 	}
+	
+	@Test
+	public void videoTest() throws Exception {
+		WebElement video = driver.findElementByAccessibilityId("Video");
+		video.click();
+		captureScreenShots("video test");
+		
+		Assert.assertNotNull(video);
 
+		
+	}
+	
 	public void captureScreenShots(String fileName) throws IOException {
 		folder_name = "screenshot";
 		File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// Date format fot screenshot file name
+		// Date format for screenshot file name
 		df = new SimpleDateFormat("dd-MMM-yyyy__hh_mm_ssaa");
 		// create dir with given folder name
 		new File(folder_name).mkdir();
