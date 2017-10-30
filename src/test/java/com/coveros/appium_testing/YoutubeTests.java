@@ -44,7 +44,7 @@ public class YoutubeTests {
 		capabilities.setCapability("appActivity", "com.google.android.apps.youtube.app.WatchWhileActivity");
 
 		driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 
 	}
 
@@ -56,7 +56,9 @@ public class YoutubeTests {
 	@Test
 	public void youtubeSearch() throws Exception {
 		String expected = "travis scott";
-
+		
+		System.out.println(driver.getPageSource());
+		
 		driver.findElementByAccessibilityId("Search").click();
 		driver.findElementById(APP_PACKAGE_NAME + "id/search_edit_text").sendKeys(expected);
 		// driver.findElementById(APP_PACKAGE_NAME+
@@ -75,17 +77,14 @@ public class YoutubeTests {
 	@Test
 	public void checkCloseButton() throws Exception {
 		//captureScreenShots("closebutton");
-
+		System.out.println(driver.getPageSource());
 		driver.findElementByAccessibilityId("Account").click();
 		//driver.findElementByAccessibilityId("Close").click();
-		WebElement close = driver.findElementByAccessibilityId("Close");
-		close.click();
-		captureScreenShots("new_close");
+		captureScreenShots("close");
 
 		//WebElement details = driver.findElementById(APP_PACKAGE_NAME + "id/details");
 
-		// captureScreenShots("closebutton");
-		Assert.assertNotNull(close);
+		//Assert.assertNotNull();
 	}
 
 	public void captureScreenShots(String fileName) throws IOException {

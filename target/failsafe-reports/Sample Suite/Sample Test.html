@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 30 10:06:36 EDT 2017</td>
+<td>Started on:</td><td>Mon Oct 30 10:53:35 EDT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>54 seconds (54081 ms)</td>
+<tr><td>Total time:</td><td>45 seconds (45790 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,37 +77,38 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.coveros.appium_testing.YoutubeTests.youtubeSearch()'><b>youtubeSearch</b><br>Test class: com.coveros.appium_testing.YoutubeTests</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12.90 seconds
+Command duration or timeout: 8.34 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
 System info: host: &apos;CoverosSpare&apos;, ip: &apos;192.168.1.174&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.google.android.youtube, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, desired={appPackage=com.google.android.youtube, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, browserName=, platformName=Android, deviceName=emulator}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, deviceModel=Samsung Galaxy S8  API 24, platformName=Android, deviceManufacturer=Genymotion}]
-Session ID: cfa00336-176c-4338-a3f4-38394cea2f18
+Session ID: b52e01af-949b-4b7a-adf5-8c4ee5a5e46c
+*** Element info: {Using=accessibility id, value=Search}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:269)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:27)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:80)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:108)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)
 	at com.coveros.appium_testing.YoutubeTests.youtubeSearch(YoutubeTests.java:60)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1479220122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1479220122'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12.90 seconds
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1199611439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1199611439'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8.34 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
 System info: host: 'CoverosSpare', ip: '192.168.1.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_144'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.google.android.youtube, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, desired={appPackage=com.google.android.youtube, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, browserName=, platformName=Android, deviceName=emulator}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, deviceModel=Samsung Galaxy S8  API 24, platformName=Android, deviceManufacturer=Genymotion}]
-Session ID: cfa00336-176c-4338-a3f4-38394cea2f18
+Session ID: b52e01af-949b-4b7a-adf5-8c4ee5a5e46c
+*** Element info: {Using=accessibility id, value=Search}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -118,11 +119,10 @@ Session ID: cfa00336-176c-4338-a3f4-38394cea2f18
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:269)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:27)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:80)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:108)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)
 	at com.coveros.appium_testing.YoutubeTests.youtubeSearch(YoutubeTests.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -138,8 +138,8 @@ Session ID: cfa00336-176c-4338-a3f4-38394cea2f18
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
-<td>13</td>
-<td>com.coveros.appium_testing.YoutubeTests@2d554825</td></tr>
+<td>8</td>
+<td>com.coveros.appium_testing.YoutubeTests@68837a77</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -151,8 +151,8 @@ Session ID: cfa00336-176c-4338-a3f4-38394cea2f18
 <tr>
 <td title='com.coveros.appium_testing.YoutubeTests.checkCloseButton()'><b>checkCloseButton</b><br>Test class: com.coveros.appium_testing.YoutubeTests</td>
 <td></td>
-<td>23</td>
-<td>com.coveros.appium_testing.YoutubeTests@2d554825</td></tr>
+<td>7</td>
+<td>com.coveros.appium_testing.YoutubeTests@68837a77</td></tr>
 </table><p>
 </body>
 </html>

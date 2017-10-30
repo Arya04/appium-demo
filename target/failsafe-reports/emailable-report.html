@@ -29,27 +29,28 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Sample Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">54.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Sample Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">45.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
 <tr><th colspan="4">Sample Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.coveros.appium_testing.YoutubeTests<td><a href="#m1"><b>youtubeSearch</b>  </a></td><td class="numi">1</td><td class="numi">13822</td></tr>
+<tr class="failedodd"><td rowspan="1">com.coveros.appium_testing.YoutubeTests<td><a href="#m1"><b>youtubeSearch</b>  </a></td><td class="numi">1</td><td class="numi">8396</td></tr>
 <tr><th colspan="4">Sample Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">com.coveros.appium_testing.YoutubeTests<td><a href="#m2"><b>checkCloseButton</b>  </a></td><td class="numi">1</td><td class="numi">23336</td></tr>
+<tr class="passedodd"><td rowspan="1">com.coveros.appium_testing.YoutubeTests<td><a href="#m2"><b>checkCloseButton</b>  </a></td><td class="numi">1</td><td class="numi">7692</td></tr>
 </table>
 <h1>Sample Test</h1>
 <a id="m1"></a><h2>com.coveros.appium_testing.YoutubeTests:youtubeSearch</h2>
 <div style="padding-left:3em">
 <p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12.90 seconds
+Command duration or timeout: 8.34 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
 System info: host: &apos;CoverosSpare&apos;, ip: &apos;192.168.1.174&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.google.android.youtube, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, desired={appPackage=com.google.android.youtube, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, browserName=, platformName=Android, deviceName=emulator}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, deviceModel=Samsung Galaxy S8  API 24, platformName=Android, deviceManufacturer=Genymotion}]
-Session ID: cfa00336-176c-4338-a3f4-38394cea2f18</p>
+Session ID: b52e01af-949b-4b7a-adf5-8c4ee5a5e46c
+*** Element info: {Using=accessibility id, value=Search}</p>
 sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 <br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -60,11 +61,10 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
 <br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 <br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:269)
-<br/>at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:27)
-<br/>at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-<br/>at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:80)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:108)
+<br/>at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)
 <br/>at com.coveros.appium_testing.YoutubeTests.youtubeSearch(YoutubeTests.java:60)
 <br/>14 lines not shown
 </div>
