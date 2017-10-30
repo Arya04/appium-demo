@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 55.548 sec <<< FAILURE!
-youtubeSearch(com.coveros.appium_testing.YoutubeTests)  Time elapsed: 12.376 sec  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 54.353 sec <<< FAILURE!
+youtubeSearch(com.coveros.appium_testing.YoutubeTests)  Time elapsed: 13.834 sec  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12.33 seconds
+Command duration or timeout: 12.90 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
 System info: host: 'CoverosSpare', ip: '192.168.1.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_144'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.google.android.youtube, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, desired={appPackage=com.google.android.youtube, appActivity=com.google.android.apps.youtube.app.WatchWhileActivity, browserName=, platformName=Android, deviceName=emulator}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, deviceModel=Samsung Galaxy S8  API 24, platformName=Android, deviceManufacturer=Genymotion}]
-Session ID: af11bccf-3fc5-412a-8d15-4a05ee712269
+Session ID: cfa00336-176c-4338-a3f4-38394cea2f18
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -26,5 +26,5 @@ Session ID: af11bccf-3fc5-412a-8d15-4a05ee712269
 	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
 	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:80)
-	at com.coveros.appium_testing.YoutubeTests.youtubeSearch(YoutubeTests.java:51)
+	at com.coveros.appium_testing.YoutubeTests.youtubeSearch(YoutubeTests.java:60)
 
