@@ -2,48 +2,48 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample Suite" duration-ms="196794" started-at="2017-10-31T10:41:51Z" finished-at="2017-10-31T10:45:08Z">
+  <suite name="Sample Suite" duration-ms="195248" started-at="2017-10-31T11:55:24Z" finished-at="2017-10-31T11:58:39Z">
     <groups>
     </groups>
-    <test name="Sample Test" duration-ms="196794" started-at="2017-10-31T10:41:51Z" finished-at="2017-10-31T10:45:08Z">
+    <test name="Sample Test" duration-ms="195248" started-at="2017-10-31T11:55:24Z" finished-at="2017-10-31T11:58:39Z">
       <class name="com.coveros.appium_testing.YoutubePageTests">
-        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="21928" started-at="2017-10-31T10:41:51Z" finished-at="2017-10-31T10:42:13Z">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="21556" started-at="2017-10-31T11:55:24Z" finished-at="2017-10-31T11:55:45Z">
         </test-method>
-        <test-method status="PASS" signature="goToAccount()" name="goToAccount" duration-ms="3316" started-at="2017-10-31T10:42:13Z" finished-at="2017-10-31T10:42:16Z">
+        <test-method status="PASS" signature="goToAccount()" name="goToAccount" duration-ms="4209" started-at="2017-10-31T11:55:45Z" finished-at="2017-10-31T11:55:49Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="4120" started-at="2017-10-31T10:42:16Z" finished-at="2017-10-31T10:42:20Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3321" started-at="2017-10-31T11:55:49Z" finished-at="2017-10-31T11:55:53Z">
         </test-method>
-        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="20899" started-at="2017-10-31T10:42:20Z" finished-at="2017-10-31T10:42:41Z">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="21197" started-at="2017-10-31T11:55:53Z" finished-at="2017-10-31T11:56:14Z">
         </test-method>
-        <test-method status="PASS" signature="goToVideo()" name="goToVideo" duration-ms="6701" started-at="2017-10-31T10:42:41Z" finished-at="2017-10-31T10:42:48Z">
+        <test-method status="PASS" signature="goToVideo()" name="goToVideo" duration-ms="5676" started-at="2017-10-31T11:56:14Z" finished-at="2017-10-31T11:56:20Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3673" started-at="2017-10-31T10:42:48Z" finished-at="2017-10-31T10:42:51Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3271" started-at="2017-10-31T11:56:20Z" finished-at="2017-10-31T11:56:23Z">
         </test-method>
-        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="22506" started-at="2017-10-31T10:42:51Z" finished-at="2017-10-31T10:43:14Z">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="20727" started-at="2017-10-31T11:56:23Z" finished-at="2017-10-31T11:56:44Z">
         </test-method>
-        <test-method status="PASS" signature="searchMethod()" name="searchMethod" duration-ms="9252" started-at="2017-10-31T10:43:14Z" finished-at="2017-10-31T10:43:23Z">
+        <test-method status="PASS" signature="searchMethod()" name="searchMethod" duration-ms="9956" started-at="2017-10-31T11:56:44Z" finished-at="2017-10-31T11:56:54Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3398" started-at="2017-10-31T10:43:23Z" finished-at="2017-10-31T10:43:27Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3527" started-at="2017-10-31T11:56:54Z" finished-at="2017-10-31T11:56:57Z">
         </test-method>
       </class>
       <class name="com.coveros.appium_testing.YoutubeTests">
-        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="20973" started-at="2017-10-31T10:43:27Z" finished-at="2017-10-31T10:43:48Z">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="20506" started-at="2017-10-31T11:56:57Z" finished-at="2017-10-31T11:57:18Z">
         </test-method>
-        <test-method status="PASS" signature="checkAccountButton()" name="checkAccountButton" duration-ms="6183" started-at="2017-10-31T10:43:48Z" finished-at="2017-10-31T10:43:54Z">
+        <test-method status="PASS" signature="checkAccountButton()" name="checkAccountButton" duration-ms="8144" started-at="2017-10-31T11:57:18Z" finished-at="2017-10-31T11:57:26Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3611" started-at="2017-10-31T10:43:54Z" finished-at="2017-10-31T10:43:57Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3284" started-at="2017-10-31T11:57:26Z" finished-at="2017-10-31T11:57:29Z">
         </test-method>
-        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="20987" started-at="2017-10-31T10:43:57Z" finished-at="2017-10-31T10:44:18Z">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="20849" started-at="2017-10-31T11:57:29Z" finished-at="2017-10-31T11:57:50Z">
         </test-method>
-        <test-method status="PASS" signature="videoTest()" name="videoTest" duration-ms="9930" started-at="2017-10-31T10:44:18Z" finished-at="2017-10-31T10:44:28Z">
+        <test-method status="PASS" signature="videoTest()" name="videoTest" duration-ms="8430" started-at="2017-10-31T11:57:50Z" finished-at="2017-10-31T11:57:58Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3337" started-at="2017-10-31T10:44:28Z" finished-at="2017-10-31T10:44:32Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3295" started-at="2017-10-31T11:57:58Z" finished-at="2017-10-31T11:58:02Z">
         </test-method>
-        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="20889" started-at="2017-10-31T10:44:32Z" finished-at="2017-10-31T10:44:52Z">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="21299" started-at="2017-10-31T11:58:02Z" finished-at="2017-10-31T11:58:23Z">
         </test-method>
-        <test-method status="PASS" signature="youtubeSearch()" name="youtubeSearch" duration-ms="11807" started-at="2017-10-31T10:44:52Z" finished-at="2017-10-31T10:45:04Z">
+        <test-method status="PASS" signature="youtubeSearch()" name="youtubeSearch" duration-ms="12624" started-at="2017-10-31T11:58:23Z" finished-at="2017-10-31T11:58:35Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3268" started-at="2017-10-31T10:45:04Z" finished-at="2017-10-31T10:45:08Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="3357" started-at="2017-10-31T11:58:35Z" finished-at="2017-10-31T11:58:39Z">
         </test-method>
       </class>
     </test>

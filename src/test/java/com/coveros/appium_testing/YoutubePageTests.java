@@ -41,16 +41,20 @@ public class YoutubePageTests {
 		String expected = "batman";
 		YoutubePage youtube = new YoutubePage(driver);
 		youtube.search(expected);
+		youtube.assertSearch(expected);
 	}
 	
 	@Test
 	public void goToAccount() throws Exception{
 		YoutubePage youtube = new YoutubePage(driver);
 		youtube.goToAccount();
+		youtube.isOnAccount();
+		
 	}
 	@Test
 	public void goToVideo() throws Exception{
 		YoutubePage youtube = new YoutubePage(driver);
 		youtube.goToVideo();
+		youtube.isHome();
 	}
 }
