@@ -32,10 +32,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class YoutubePage {
-	
+	AndroidDriver<WebElement> driverX;
 	public YoutubePage(AndroidDriver<WebElement> driver) {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-		
+		driverX = driver;
 	}
 	
 	@AndroidFindBy(id = "Search")
@@ -53,19 +53,32 @@ public class YoutubePage {
 	@AndroidFindBy(id = "Navigate up")
 	public WebElement nav;
 	
+	@AndroidFindBy(id = "YouTube")
+	public WebElement home;
+	
+	
 
 	public void search(String params) throws Exception{
 		search.click();
 		searchQuery.sendKeys(params);
+		assertSearch(params);
 	}
 	public void goToAccount() {
 		account.click();
-		Assert.assertNotNull(account);
-
+		isOnAccount();
 	}
 	public void goToVideo() {
 		video.click();
 		nav.click();
-		Assert.assertNotNull(nav);
+		isHome();
+	}
+	public void assertSearch(String params) {
+		Assert.assertEquals(searchQuery.getText(), params);
+	}
+	public void isHome() {
+		Assert.assertTrue(home.isDisplayed());
+	}
+	public void isOnAccount() {
+		Assert.assertTrue(account.isDisplayed());
 	}
 }

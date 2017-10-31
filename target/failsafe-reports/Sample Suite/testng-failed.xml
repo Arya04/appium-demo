@@ -3,9 +3,15 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Sample Suite]" parallel="tests">
   <test name="Sample Test(failed)" parallel="tests" preserve-order="false">
     <classes>
+      <class name="com.coveros.appium_testing.YoutubePageTests">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="goToAccount"/>
+        </methods>
+      </class>
       <class name="com.coveros.appium_testing.YoutubeTests">
         <methods>
-          <include name="checkAccountButton"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="CoverosSpare" name="com.coveros.appium_testing.YoutubePageTests" tests="6" failures="0" timestamp="30 Oct 2017 20:55:00 GMT" time="188.871" errors="0">
-  <testcase name="goToAccount" time="3.46" classname="com.coveros.appium_testing.YoutubePageTests"/>
-  <testcase name="goToVideo" time="7.943" classname="com.coveros.appium_testing.YoutubePageTests"/>
-  <testcase name="searchMethod" time="7.201" classname="com.coveros.appium_testing.YoutubePageTests"/>
-  <testcase name="checkAccountButton" time="7.841" classname="com.coveros.appium_testing.YoutubeTests"/>
-  <testcase name="videoTest" time="10.291" classname="com.coveros.appium_testing.YoutubeTests"/>
-  <testcase name="youtubeSearch" time="11.313" classname="com.coveros.appium_testing.YoutubeTests"/>
+<testsuite hostname="CoverosSpare" name="com.coveros.appium_testing.YoutubePageTests" tests="6" failures="0" timestamp="31 Oct 2017 14:45:08 GMT" time="196.794" errors="0">
+  <testcase name="goToAccount" time="3.316" classname="com.coveros.appium_testing.YoutubePageTests"/>
+  <testcase name="goToVideo" time="6.701" classname="com.coveros.appium_testing.YoutubePageTests"/>
+  <testcase name="searchMethod" time="9.252" classname="com.coveros.appium_testing.YoutubePageTests"/>
+  <testcase name="checkAccountButton" time="6.183" classname="com.coveros.appium_testing.YoutubeTests"/>
+  <testcase name="videoTest" time="9.93" classname="com.coveros.appium_testing.YoutubeTests"/>
+  <testcase name="youtubeSearch" time="11.807" classname="com.coveros.appium_testing.YoutubeTests"/>
 </testsuite>
